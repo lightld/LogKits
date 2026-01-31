@@ -1,0 +1,55 @@
+# фикс: как выдавать через консоль киты: kit give <ник> <названиекита>
+
+# настройка меню китов
+gui:
+  menu_title: '&fꈁꀀꈂꍀꈂꀁ&0ꈃꄑ'
+  size: 53
+
+  # слоты верхней строки кит превью
+  slots:
+    helmet: 2
+    chestplate: 3
+    leggings: 4
+    boots: 5
+    offhand: 6
+
+  # слоты для остальных слотов меню
+  item-slots: [9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44]
+  # настройка кнопки для получения кита
+  claim_button:
+    display_name: '&a&lПолучить набор'
+    slot: 53
+    material: SLIME_BLOCK
+    lore:
+      - ''
+      - '&fНажмите, чтобы &6получить'
+      - '&fданный набор'
+      - ''
+      - '&fЗадержка: &6%cooldown%'
+      # Внимание: Строка с настройкой доступности можно настроить в файле конкретного кита!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+  # кнопка возврата в меню
+  back_button:
+    material: ARROW
+    model_data: 10002
+    slot: 45
+    display_name: '&6Назад'
+    left_click_commands:
+      - '[openguimenu] kits'
+    right_click_commands:
+      - '[openguimenu] kits'
+
+time_words:
+  day: "день"
+  days2: "дня"
+  days5: "дней"
+  hour: "час"
+  hours2: "часа"
+  hours5: "часов"
+  minute: "минута"
+  minutes2: "минуты"
+  minutes5: "минут"
+  second: "секунда"
+  seconds2: "секунды"
+  seconds5: "секунд"
+  zero_seconds: "0 секунд"

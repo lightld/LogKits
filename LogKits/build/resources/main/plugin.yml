@@ -1,0 +1,16 @@
+name: LogKits
+version: '1'
+main: com.l1ghtld.LogKits
+api-version: '1.16'
+commands:
+  logkits:
+    usage: /logkits
+    aliases:
+      - kit
+      - kits
+      - logkits
+permissions:
+  logkits.admin:
+    default: op
+  logkits.kit:
+    default: true
